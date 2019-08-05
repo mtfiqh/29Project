@@ -13,6 +13,15 @@
         <div data-depth="1" style="height:100vh"><img src="{{asset('first_page/8.png')}}"></div>
     </div>
 </div>
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="width: 100%">
+                <a href="{{url('stories')}}" class="btn btn-sm btn-primary" style="position:fixed;">Read Our Stories!</a>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @section('css')
