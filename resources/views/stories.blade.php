@@ -2,8 +2,11 @@
 
 @section('content')
 <div style="background-image: url({{asset('header.jpg')}}); height:100vh;" id="particles-js"></div>
-    <div class="container">
-        <div class="mt-2 card col-md-12">
+
+<div class="container">
+    <h2>Page 1</h2>
+    <hr />
+    <div class="mt-2 card col-md-12">
             <div class="row">
                 <div class="card-body">
                     <div class="row">
@@ -32,7 +35,7 @@
                                 </audio>
                             </div>
                             <div class="col-md-6">
-                                    <img class="img-fluid thumbnail" src="{{asset('image/awal-jadian.JPG')}}">
+                                    <img class="img-fluid thumbnailR" src="{{asset('image/awal-jadian.JPG')}}">
                             </div>
                         </div>
                     </div>
@@ -61,6 +64,9 @@
 
 @section('css')
     <style>
+        body{
+            background-color: #fafafa
+        }
     .parallax-window {
         min-height: 400px;
         background: transparent;
@@ -72,11 +78,17 @@
     <script src="{{ asset('js/simpleParallax.min.js') }}"></script>
     <script src="{{ asset('js/particles.min.js') }}"></script>
     <script>
+        var imageR = document.getElementsByClassName('thumbnailR');
         var image = document.getElementsByClassName('thumbnail');
         new simpleParallax(image,{
             // overflow: true,
-            scale:1.5,
+            scale:2,
             // orientation:right,
+        });
+        new simpleParallax(imageR,{
+            // overflow: true,
+            scale:1.5,
+            orientation:'right',
         });
         this.conf = '{{asset('particlesjs-config.json')}}'
         particlesJS.load('particles-js', this.conf, function() {
