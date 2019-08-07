@@ -26,6 +26,10 @@ audio:not([controls]) {
 [hidden] {
   display: none; }
 
+.bg-particles{
+    background: url(../header.jpg);
+    height:100vh;
+}
 .bg{
     background: url(../first_page/BG.png)
 }

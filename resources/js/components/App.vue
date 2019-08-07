@@ -1,10 +1,24 @@
 <template>
     <div>
-        <h1>Vue Router Demo App</h1>
-
+        <div class="bg-particles" id="particles-js"></div>
         <router-view></router-view>
     </div>
 </template>
 <script>
-    export default {}
+    import 'particles.js'
+    import particleConf from '../assets/particlejs-config.json'
+    export default {
+        mounted(){
+            this.initParticles()
+            // particlesJS("particle-js", )
+        },
+        methods:{
+            initParticles(){
+                window.particlesJS("particles-js", particleConf)
+            },
+        },
+        created(){
+
+        }
+    }
 </script>
