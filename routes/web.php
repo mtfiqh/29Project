@@ -10,11 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/stories', 'SpaController@index')->where('any', '.*');
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/stories', function () {
-    return view('stories');
-});
+// Route::get('/stories', function () {
+//     return view('stories');
+// });
