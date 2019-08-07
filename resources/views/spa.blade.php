@@ -18,7 +18,7 @@
     <body>
         @yield('content')
         <div id="app">
-            <app></app>
+            <stories></stories>
         </div>
         <script src="{{asset('js/app.js')}}"></script>
         <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>

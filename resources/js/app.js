@@ -23,8 +23,9 @@ Vue.use(VueRouter)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-import App from './components/App.vue'
+// import App from './components/App.vue'
 import Stories from './components/Stories.vue'
+import StoriesPage1 from './components/StoriesPage1.vue'
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -37,14 +38,14 @@ import Stories from './components/Stories.vue'
      routes: [
          {
             path:'/stories',
-            name: 'stories',
-            component: Stories
+            name: 'storiespage1',
+            component: StoriesPage1
          }
      ]
  })
 
-const app = new Vue({
+const stories = new Vue({
     el: '#app',
-    render: h => h(App),
+    render: h => h(Stories),
     router
 });
