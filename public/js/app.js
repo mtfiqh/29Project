@@ -39540,19 +39540,19 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-md-6" }, [
                 _c("p", [
                   _vm._v(
-                    "\n                                Aku tau ngomong ini berulang-ulang, tapi inget ga? momment ini? Kalo diinget-inget kadang lucu ya hehe...\n                                "
+                    "\r\n                                Aku tau ngomong ini berulang-ulang, tapi inget ga? momment ini? Kalo diinget-inget kadang lucu ya hehe...\r\n                                "
                   ),
                   _c("br"),
                   _vm._v(
-                    "\n                                Disini siang hari, tanggal 29 Juli 2017, i ask you, "
+                    "\r\n                                Disini siang hari, tanggal 29 Juli 2017, i ask you, "
                   ),
                   _c("i", [_vm._v("do you want to be my girlfriend")]),
                   _vm._v(", and you "),
                   _c("b", [_vm._v("accepted")]),
-                  _vm._v(" it !\n                                "),
+                  _vm._v(" it !\r\n                                "),
                   _c("br"),
                   _vm._v(
-                    "\n                                whoaaaaaa!! i'm so happy to hear that!!\n                            "
+                    "\r\n                                whoaaaaaa!! i'm so happy to hear that!!\r\n                            "
                   )
                 ]),
                 _vm._v(" "),
@@ -54920,8 +54920,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/d/project/29Project/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/d/project/29Project/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\29Project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\29Project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
