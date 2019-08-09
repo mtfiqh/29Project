@@ -1848,7 +1848,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      count: 1
+    };
+  },
+  methods: {
+    next: function next() {
+      this.count++;
+    },
+    prev: function prev() {
+      this.count--;
+    }
+  }
+});
 
 /***/ }),
 
@@ -2002,6 +2016,8 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var imageR = document.getElementsByClassName('thumbnailR');
     var image = document.getElementsByClassName('thumbnail');
+    console.log(imageR);
+    console.log(image);
     this.initParallax(image, 2);
     this.initParallax(imageR, 1.2, 'up right');
   },
@@ -39574,28 +39590,63 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "text-center mt-5" }, [
+    _c(
+      "div",
+      { staticClass: "mx-auto" },
+      [
+        _c("router-link", { attrs: { to: { path: "/stories/" } } }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-sm btn-warning mr-2",
+              attrs: { disabled: _vm.count <= 1 },
+              on: {
+                click: function($event) {
+                  return _vm.prev()
+                }
+              }
+            },
+            [_vm._v("Prev")]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "router-link",
+          { attrs: { to: { path: "/stories/" + _vm.count } } },
+          [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-primary ml-2",
+                on: {
+                  click: function($event) {
+                    return _vm.next()
+                  }
+                }
+              },
+              [_vm._v("Next")]
+            )
+          ]
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center mt-5" }, [
-      _c("div", { staticClass: "mx-auto" }, [
-        _c("button", { staticClass: "btn btn-sm btn-warning" }, [
-          _vm._v("Prev")
-        ]),
-        _vm._v(" "),
-        _c("button", { staticClass: "btn btn-sm btn-primary" }, [
-          _vm._v("Next")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "mt-4" }, [
-        _vm._v(
-          "Created with love ♥ | copyright Muhammad Taufiq Hidayat | for Reza Octaviany"
-        )
+    return _c("p", { staticClass: "mt-4" }, [
+      _vm._v(
+        "Created with love ♥ | Copyright fiq@2019 | for Reza Octaviany | Source in "
+      ),
+      _c("a", { attrs: { href: "http://github.com/taufiq2810" } }, [
+        _vm._v("Github")
       ])
     ])
   }
@@ -39723,7 +39774,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-md-6 my-auto" }, [
                 _c("img", {
                   staticClass: "img-fluid thumbnailR",
-                  attrs: { src: "image/ke2.jpg" }
+                  attrs: { src: "/image/ke2.jpg" }
                 })
               ])
             ])
@@ -39738,7 +39789,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-md-6" }, [
                 _c("img", {
                   staticClass: "img-fluid thumbnail",
-                  attrs: { src: "image/awal-jadian.JPG" }
+                  attrs: { src: "/image/awal-jadian.JPG" }
                 })
               ]),
               _vm._v(" "),

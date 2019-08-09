@@ -41,7 +41,7 @@
                                 </audio>
                             </div>
                             <div class="col-md-6 my-auto">
-                                    <img class="img-fluid thumbnailR" src="image/ke2.jpg">
+                                    <img class="img-fluid thumbnailR" src="/image/ke2.jpg">
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-fluid thumbnail" src="image/awal-jadian.JPG">
+                                    <img class="img-fluid thumbnail" src="/image/awal-jadian.JPG">
                                 </div>
                                 <div class="col-md-6 my-auto">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -83,6 +83,8 @@ export default {
     mounted(){
         var imageR = document.getElementsByClassName('thumbnailR');
         var image = document.getElementsByClassName('thumbnail');
+        console.log(imageR)
+        console.log(image)
 
         this.initParallax(image, 2)
         this.initParallax(imageR, 1.2, 'up right')
