@@ -1844,6 +1844,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1989,13 +1993,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     var imageR = document.getElementsByClassName('thumbnailR');
     var image = document.getElementsByClassName('thumbnail');
     this.initParallax(image, 2);
-    this.initParallax(imageR, 1.5, 'up right');
+    this.initParallax(imageR, 1.2, 'up right');
   },
   methods: {
     initParallax: function initParallax(obj, scale) {
@@ -39566,13 +39574,32 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "text-center mt-5" }, [
-    _vm._v(
-      "\n    Created with love ♥| copyright Muhammad Taufiq Hidayat | for Reza Octaviany\n"
-    )
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center mt-5" }, [
+      _c("div", { staticClass: "mx-auto" }, [
+        _c("button", { staticClass: "btn btn-sm btn-warning" }, [
+          _vm._v("Prev")
+        ]),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-sm btn-primary" }, [
+          _vm._v("Next")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "mt-4" }, [
+        _vm._v(
+          "Created with love ♥ | copyright Muhammad Taufiq Hidayat | for Reza Octaviany"
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -39683,8 +39710,12 @@ var staticRenderFns = [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-6" }, [
-                _c("p", [_vm._v("Tes")]),
+              _c("div", { staticClass: "col-md-6 my-auto" }, [
+                _c("p", [
+                  _vm._v(
+                    "\n                                    Terus kita photo disini hehe, lucu ya, masih canggung....\n\n\n                                "
+                  )
+                ]),
                 _vm._v(" "),
                 _c("audio", { attrs: { controls: "" } })
               ]),
@@ -55119,8 +55150,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\29Project\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\29Project\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\29Project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\29Project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

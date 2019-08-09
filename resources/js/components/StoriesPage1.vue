@@ -30,8 +30,12 @@
                 <div class="row">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
-                                <p>Tes</p>
+                            <div class="col-md-6 my-auto">
+                                <p>
+                                    Terus kita photo disini hehe, lucu ya, masih canggung....
+
+
+                                </p>
                                 <audio  controls>
 
                                 </audio>
@@ -81,7 +85,7 @@ export default {
         var image = document.getElementsByClassName('thumbnail');
 
         this.initParallax(image, 2)
-        this.initParallax(imageR, 1.5, 'up right')
+        this.initParallax(imageR, 1.2, 'up right')
     },
     methods:{
         initParallax(obj, scale, orientation='up'){
