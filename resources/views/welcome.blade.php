@@ -1,99 +1,37 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('template')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+@section('content')
+<div class="wrapper">
+    <div id="scene" class="bg">
+        <div data-depth="0.3" style="height:100vh"><img src="{{asset('first_page/1.png')}}"></div>
+        <div data-depth="0.4" style="height:100vh"><img src="{{asset('first_page/2.png')}}"></div>
+        <div data-depth="0.9" style="height:100vh"><img src="{{asset('first_page/3.png')}}"></div>
+        <div data-depth="0.6" style="height:100vh"><img src="{{asset('first_page/4.png')}}"></div>
+        <div data-depth="0.7" style="height:100vh"><img src="{{asset('first_page/5.png')}}"></div>
+        <div data-depth="0.8" style="height:100vh"><img src="{{asset('first_page/6.png')}}"></div>
+        <div data-depth="0.9" style="height:100vh"><img src="{{asset('first_page/7.png')}}"></div>
+        <div data-depth="1" style="height:100vh"><img src="{{asset('first_page/8.png')}}"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="width: 100%">
+                <a href="{{url('stories')}}" class="btn btn-sm btn-primary" style="position:fixed;">Read Our Stories!</a>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+@endsection
+
+@section('css')
+    <link href="{{asset('css/my.css')}}" rel="stylesheet">
+@endsection
+
+@section('js')
+    <script src="{{asset('js/parallax.min.js')}}"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+@endsection
