@@ -11,11 +11,10 @@
 |
 */
 Route::get('/stories', 'SpaController@index')->where('any', '.*');
+Route::get('/stories/{any}', 'SpaController@index')->where('any', '.*');
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/stories', function () {
-//     return view('stories');
-// });

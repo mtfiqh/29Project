@@ -26,6 +26,7 @@ Vue.use(VueRouter)
 // import App from './components/App.vue'
 import Stories from './components/Stories.vue'
 import StoriesPage1 from './components/StoriesPage1.vue'
+import StoriesPage2 from './components/StoriesPage2.vue'
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -40,7 +41,13 @@ import StoriesPage1 from './components/StoriesPage1.vue'
             path:'/stories',
             name: 'storiespage1',
             component: StoriesPage1
-         }
+         },
+         {
+            path:'/stories/2',
+            name: 'storiespage2',
+            component: StoriesPage2
+         },
+
      ]
  })
 

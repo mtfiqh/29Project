@@ -1,6 +1,6 @@
 <template>
 <div class="container mt-3">
-    <h2>Page 1</h2>
+    <h2>Page 1 - <i>The Beginning</i></h2>
     <hr />
     <div class="mt-2 card col-md-12">
             <div class="row">

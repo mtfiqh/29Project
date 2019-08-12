@@ -1,10 +1,6 @@
 <template>
     <div>
-                <div class="bg-particles" id="particles-js">
-
-                </div>
-
-
+        <div class="bg-particles" id="particles-js"></div>
         <transition name="slide">
             <router-view></router-view>
 
