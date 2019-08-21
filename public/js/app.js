@@ -2008,6 +2008,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
@@ -2042,6 +2046,29 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var simple_parallax_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! simple-parallax-js */ "./node_modules/simple-parallax-js/dist/simpleParallax.min.js");
 /* harmony import */ var simple_parallax_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(simple_parallax_js__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39802,8 +39829,13 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-md-6 my-auto" }, [
                 _c("p", [
                   _vm._v(
-                    "\n                                    Terus kita photo disini hehe, lucu ya, masih canggung....\n\n\n                                "
-                  )
+                    "\n                                    Terus kita photo disini hehe, lucu ya, masih canggung...."
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "\n                                    Kadang inget ini lucu banget hehe, like ->"
+                  ),
+                  _c("i", [_vm._v("beneran nih jadian")])
                 ]),
                 _vm._v(" "),
                 _c("audio", { attrs: { controls: "" } })
@@ -39827,15 +39859,24 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-md-6" }, [
                 _c("img", {
                   staticClass: "img-fluid thumbnail",
-                  attrs: { src: "/image/awal-jadian.JPG" }
+                  attrs: { src: "/image/ke3.JPG" }
                 })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6 my-auto" }, [
                 _c("p", [
                   _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                  )
+                    "\n                                        Happiness is here !"
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "\n                                        ehe, ini waktu kita ke puncak mas ☺, kalo diliat-liat lagi photonya lucu-lucu"
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "\n                                        ehehehe ♥♥♥\n                                        "
+                  ),
+                  _c("b")
                 ]),
                 _vm._v(" "),
                 _c("audio", { attrs: { controls: "" } })
@@ -39881,7 +39922,27 @@ var staticRenderFns = [
         _c("i", [_vm._v("Things made me happy")])
       ]),
       _vm._v(" "),
-      _c("hr")
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" })
+          ])
+        ])
+      ])
     ])
   }
 ]

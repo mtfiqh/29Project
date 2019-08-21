@@ -32,8 +32,8 @@
                         <div class="row">
                             <div class="col-md-6 my-auto">
                                 <p>
-                                    Terus kita photo disini hehe, lucu ya, masih canggung....
-
+                                    Terus kita photo disini hehe, lucu ya, masih canggung....<br/>
+                                    Kadang inget ini lucu banget hehe, like -><i>beneran nih jadian</i>
 
                                 </p>
                                 <audio  controls>
@@ -53,12 +53,16 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img class="img-fluid thumbnail" src="/image/awal-jadian.JPG">
+                                    <img class="img-fluid thumbnail" src="/image/ke3.JPG">
                                 </div>
                                 <div class="col-md-6 my-auto">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>
+                                        Happiness is here !<br />
+                                        ehe, ini waktu kita ke puncak mas ☺, kalo diliat-liat lagi photonya lucu-lucu<br />
+                                        ehehehe ♥♥♥
+                                        <b></b>
+                                    </p>
                                     <audio  controls>
-
                                     </audio>
                                 </div>
                             </div>
